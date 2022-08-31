@@ -1,7 +1,7 @@
 // import { Link } from "react-router-dom";
 
 import { NavLink } from "react-router-dom";
-import { imz } from "../cocktalelogo.svg";
+import imag from "../cocktalelogo.svg";
 
 // import { Lin } from "react-router-dom";
 
@@ -12,7 +12,7 @@ const Nav = () => {
         <div className="flex">
           <a href="/">
             <div className="img">
-              <img src={imz} alt="" />
+              <img src={imag} alt="" />
             </div>
           </a>
 
