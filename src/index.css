@@ -138,7 +138,8 @@
 .grid {
   padding-top: 100px;
   display: grid;
-  max-width: 700px;
+  max-width: 900px;
+  justify-items: center;
   margin: auto;
   grid-template-columns: 1fr;
   grid-gap: 40px;
@@ -150,6 +151,7 @@
 }
 .grid__cover {
   margin: auto;
+  /* justify-self: center; */
 }
 @media (min-width: 760px) {
   .grid__cover {
@@ -157,13 +159,24 @@
   }
 }
 .grid__cover .card {
-  max-width: 400px;
+  width: 400px;
+  /* max-width: ; */
   padding: 8px;
   padding-bottom: 27px;
   -webkit-box-shadow: var(--box-shodow);
   box-shadow: var(--box-shodow);
   background: var(--white-color);
   border-radius: 8px;
+}
+@media (max-width: 441px) {
+  .grid__cover .card {
+    max-width: 300px;
+  }
+}
+@media (max-width: 335px) {
+  .grid__cover .card {
+    max-width: 200px;
+  }
 }
 .grid__cover .card > a > .btn {
   padding: 8px 18px;
